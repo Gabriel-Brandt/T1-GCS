@@ -1,6 +1,15 @@
 import java.util.Scanner;
 
 public class App {
+    public static void resposta (int resp){
+        if (resp == 1) {
+            System.out.println("Que bom");
+        }
+        else{
+            System.out.println("Que pena");
+        }
+    }
+
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
@@ -46,6 +55,11 @@ public class App {
         }
 
         System.out.println("Obrigado por testar nossa calculadora");
+        System.out.println("\nVocê gostou? (1-sim ou 2-não)");
+
+        int resp = sc.nextInt();
+
+        resposta(resp);
 
         sc.close();
     }
