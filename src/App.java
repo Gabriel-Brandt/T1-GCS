@@ -45,6 +45,8 @@ public class App {
             System.out.println("Resultado: " + resultado);
         }
 
+        System.out.println("Obrigado por testar nossa calculadora");
+
         sc.close();
     }
 }
